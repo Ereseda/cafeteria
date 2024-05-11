@@ -4,377 +4,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Cafeteria" />
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="Café Frances de manhã." />
-    <meta property="og:site_name" content="U sabor irresistível" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="style.css">
-    <title>Cafeteria</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta property="og:title" content="Bolo caseiro" />
+    <meta property="og:image" content="https://bolos-phi.vercel.app/img/straw.jpg" />
+    <meta property="og:description" content="Cada fatia, uma experiência de sabor único." />
+    <meta property="og:site_name" content="Bolos" />
+    <title>Bolos</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="images/logo.png" alt="logo">
-        </a>
-        <nav class="navbar">
-            <a href="#home">Inicio</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#menu">Menu</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#revisao">Revisão</a>
-            <a href="#contact">Contato</a>
-            <a href="#blogs">blogs</a>
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png"></a>
+        <nav class="navigate">
+            <ul>
+                <li><a href="#home" class="active">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#service">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
         </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="Procure aqui...">
-            <label for="search-box" class="fas fa-search"></label>
-        </div>
-        <div class="cart-items-container">
-            <!--1-->
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/cart-item-1.png" alt="cart-item-1">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">R$ 82,34</div>
-                </div>
-            </div>
-            <!--2-->
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/cart-item-2.png" alt="cart-item-2">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">R$ 82,34</div>
-                </div>
-            </div>
-            <!--3-->
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/cart-item-3.png" alt="cart-item-3">
-                <div class="content">
-                    <h3>cart item 03</h3>
-                    <div class="price">R$ 82,34</div>
-                </div>
-            </div>
-            <!--4-->
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/cart-item-4.png" alt="cart-item-4">
-                <div class="content">
-                    <h3>cart item 04</h3>
-                    <div class="price">R$ 82,34</div>
-                </div>
-            </div>
-            <a href="#" class="btn">Confira</a>
+        <div id="menu">
+            <i class="fas fa-bars"></i>
         </div>
     </header>
-    <section class="home" id="home">
-        <div class="content">
-            <h3>Café frances de manhã</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, vitae. Quas, beatae ratione architecto
-                obcaecati </p>
-            <a href="#" class="btn">Faça seu pedido</a>
+    <section id="home" class="home">
+        <h1>O melhor bolo da cidade</h1>
+        <br>
+        <p>Cada fatia, uma experiência de sabor única</p>
+        <div class="home-btn">
+            <button>Agende já<i class="fas fa-angle-right"></i></button>
         </div>
     </section>
-    <section class="sobre" id="sobre">
-        <h2 class="heading"> <span>Sobre </span>nós</h2>
-        <div class="row">
+    <section id="sobre" class="sobre">
+        <div class="sobre-content">
+            <h2>Nossa história</h2>
+            <p>
+                Em uma pequena cidade, havia uma confeitaria chamada "Bolos Encantados". Fundada por uma chef apaixonada
+                chamada Clara, a confeitaria se tornou rapidamente o coração do bairro. Com seus bolos artesanais e
+                sabores únicos, Bolos Encantados conquistou o paladar de todos na cidade.
+            </p>
+            <button class="btn">
+                Leia mais
+                <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+        <div class="image">
+            <img src="img/im2.png" alt="imagem-2">
+        </div>
+    </section>
+    <section id="produtos" class="produtos">
+        <h1 class="title">Nossos bolos mais<span>popular</span></h1>
+        <div class="cake-product">
+            <div class="inner-cake-row">
+                <div class="inner-cake-col">
+                    <img src="img/coco.jpg" alt="coco">
+                    <div class="cake-price">
+                        <p>R$ 12,00</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2>Cocoa Cake</h2>
+                    <h3>Gluten Free- Sugar Free</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="inner-cake-col">
+                    <img src="img/lemon.jpg" alt="Lime">
+                    <div class="cake-price">
+                        <p>R$ 12,00</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2>Lime Cake</h2>
+                    <h3>Gluten Free- Sugar Free</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="inner-cake-col">
+                    <img src="img/raspberry.jpg" alt="raspherry">
+                    <div class="cake-price">
+                        <p>R$ 12,00</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2>Raspherry</h2>
+                    <h3>Gluten Free- Sugar Free</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="inner-cake-col">
+                    <img src="img/straw.jpg" alt="straw">
+                    <div class="cake-price">
+                        <p>R$ 12,00</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2>Strawberry cake</h2>
+                    <h3>Gluten Free- Sugar Free</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="inner-cake-col">
+                    <img src="img/coc.jpg" alt="coc">
+                    <div class="cake-price">
+                        <p>R$ 12,00</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2>Coconut Cake</h2>
+                    <h3>Gluten Free- Sugar Free</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="inner-cake-col">
+                    <img src="img/orange.jpg" alt="orange">
+                    <div class="cake-price">
+                        <p>R$ 12,00</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2>Orange Cake</h2>
+                    <h3>Gluten Free- Sugar Free</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service" class="service">
+        <h1 class="title">Projete sua <span>ocasião</span></h1>
+        <div class="cake-list">
+            <a class="btn1 active" data-src="./img/birthday.jpg">Aniversário</a>
+            <a class="btn1" data-src="./img/babyshower.jpg">Chá- de Bebê</a>
+            <a class="btn1" data-src="./img/weeding.jpg">Casamento</a>
+            <a class="btn1" data-src="./img/cupcake.jpg">Bolinho</a>
+        </div>
+        <div class="cake-row">
             <div class="image">
-                <img src="images/about-img.jpeg" alt="sobre">
+                <img src="./img/birthday.jpg" id="cake-img" alt="">
             </div>
-            <div class="content">
-                <h3>O que faz nosso café especial.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ut corporis perferendis magni,
-                    placeat eligendi, a enim dolores nemo excepturi sint vo
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ut corporis perferendis magni,
-                    placeat eligendi, a enim dolores nemo excepturi sint vo
-                </p>
-                <a href="#" class="btn">Aprenda mais</a>
-            </div>
-        </div>
-    </section>
-    <section class="menu" id="menu">
-        <h1 class="heading"> Nosso <span>menu</span></h1>
-        <div class="box-container">
-            <div class="box">
-                <img src="images/menu-1.png" alt="menu-1">
-                <h3>Gostoso e saudável</h3>
-                <div class="price">
-                    R$ 29,99 <span>R$89,00</span>
-                    <a href="#" class="btn">Adicionar</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/menu-2.png" alt="menu-2">
-                <h3>Gostoso e saudável</h3>
-                <div class="price">
-                    R$ 29,99 <span>R$89,00</span>
-                    <a href="#" class="btn">Adicionar</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/menu-3.png" alt="menu-3">
-                <h3>Gostoso e saudável</h3>
-                <div class="price">
-                    R$ 29,99 <span>R$89,00</span>
-                    <a href="#" class="btn">Adicionar</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/menu-4.png" alt="menu-4">
-                <h3>Gostoso e saudável</h3>
-                <div class="price">
-                    R$ 29,99 <span>R$89,00</span>
-                    <a href="#" class="btn">Adicionar</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/menu-5.png" alt="menu-5">
-                <h3>Gostoso e saudável</h3>
-                <div class="price">
-                    R$ 29,99 <span>R$89,00</span>
-                    <a href="#" class="btn">Adicionar</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/menu-6.png" alt="menu-6">
-                <h3>Gostoso e saudável</h3>
-                <div class="price">
-                    R$ 29,99 <span>R$89,00</span>
-                    <a href="#" class="btn">Adicionar</a>
+            <div class="cake-content">
+                <div class="cake-info">
+                    <h3> Design Your Cake with Flavors
+                        &nbsp;<i class="fas fa-birthday-cake"></i></h3>
+                    <a><i class="fas fa-hand-point-right"></i>CLASSIC RED VELVET<br></a>
+                    <a><i class="fas fa-hand-point-right"></i>CHOCOLATE VANILLA<br></a>
+                    <a><i class="fas fa-hand-point-right"></i>DOUBLE CHOCOLATE<br></a>
+                    <a><i class="fas fa-hand-point-right"></i>GLUTEN FREE RED VELVET<br></a>
+                    <a><i class="fas fa-hand-point-right"></i>SUGAR FREE CHOCOLATE<br></a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="produtos" id="produtos">
-        <h1 class="heading"> Nossos <span>produtos</span></h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="images/product-1.png" alt="produto-1">
-                </div>
-                <div class="content">
-                    <h3>Café Frances</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">
-                        R$ 29,99 <span>R$89,00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="images/product-2.png" alt="produto-2">
-                </div>
-                <div class="content">
-                    <h3>Café Frances</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">
-                        R$ 29,99 <span>R$89,00</span>
-                    </div>
-                </div>
-            </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#menu').click(function () {
+            $(this).toggleClass('fas fa-times');
+            $('.navigate').toggleClass('nav-toggle');
+        });
 
-            <div class="box">
-                <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+        $(window).on('scroll load', function () {
+            $('#menu').removeClass('fas fa-times');
+            $('.navigate').removeClass('nav-toggle');
+        });
+
+        $('.service .cake-list .btn1').click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+
+            let src = $(this).attr('data-src');
+            $('#cake-img').attr('src', src);
+        });
+    });
+</script>
+<footer class="contact" id="contact">
+    <div class="cake-contact">
+        <div class="cake-contact-row">
+            <div class="cake-contact-col">
+                <img src="img/imm1.jpg" alt="imm1" class="imgs">
+            </div>
+            <div class="cake-contact-col">
+                <h1>Contate nos</h1>
+                <div class="social">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
                 </div>
-                <div class="image">
-                    <img src="images/product-3.png" alt="produto-3">
-                </div>
-                <div class="content">
-                    <h3>Café Frances</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">
-                        R$ 29,99 <span>R$89,00</span>
-                    </div>
-                </div>
+                <p>Estrada Municipal, São José dos Campos-SP<br>(12)00-0000-000</p>
+                <p>Queremos ouvir de você, escreva nos.</p>
+                <form action="#" method="get">
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome." required>
+                    <input type="text" name="email" id="email" placeholder="Digite seu email" required>
+                    <input type="text" name="mobile" id="mobile" placeholder="Digite seu celular" required>
+                    <textarea name="" id="" cols="10" rows="8" placeholder="Por favor digite sua opinião"></textarea>
+                    <button class="btn">Enviar<i class="fas fa-angle-right"></i></button>
+                </form>
             </div>
         </div>
-    </section>
-    <section class="revisao" id="revisao">
-        <h1 class="heading">Avaliação <span>clientes</span></h1>
-        <div class="box-container">
-            <div class="box">
-                <img src="images/quote-img.png" alt="quote" class="quote">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolores necessitatibus nisi
-                    suscipit eaque fugiat voluptates, quia esse nesciunt harum, officiis distinctio</p>
-                <img src="images/sr.jpg" alt="sr" class="user">
-                <h3>Mir Shahrear</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/quote-img.png" alt="quote" class="quote">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolores necessitatibus nisi
-                    suscipit eaque fugiat voluptates, quia esse nesciunt harum, officiis distinctio</p>
-                <img src="images/sr2.jpg" alt="sr" class="user">
-                <h3>Riaz Alan</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/quote-img.png" alt="quote" class="quote">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolores necessitatibus nisi
-                    suscipit eaque fugiat voluptates, quia esse nesciunt harum, officiis distinctio</p>
-                <img src="images/pic-3.png" alt="sr" class="user">
-                <h3>John deo</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact" id="contact">
-        <h1 class="heading"><span>Contate</span> nos</h1>
-        <div class="row">
+        <div class="map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.6166262260836!2d-45.876774525437185!3d-23.184188347842497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a3736f54257%3A0x3e3e535024556a87!2sAv.%20Brasil%20-%20Monte%20Castelo%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012215-000!5e0!3m2!1spt-BR!2sbr!4v1715374785288!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.6166262260913!2d-45.87677452543716!3d-23.1841883478425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a3736f54257%3A0x3e3e535024556a87!2sAv.%20Brasil%20-%20Monte%20Castelo%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012215-000!5e0!3m2!1spt-BR!2sbr!4v1715295588392!5m2!1spt-BR!2sbr"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-            <form action="">
-                <h3>Entre em contato</h3>
-                <div class="inputBox">
-                    <span class="fas fa-user"></span>
-                    <input type="text" placeholder="nome">
-                </div>
-                <div class="inputBox">
-                    <span class="fas fa-user"></span>
-                    <input type="email" placeholder="email">
-                </div>
-                <div class="inputBox">
-                    <span class="fas fa-user"></span>
-                    <input type="text" placeholder="number">
-                </div>
-                <input type="submit" value="contate nos" class="btn">
-            </form>
         </div>
-    </section>
-    <section class="blogs" id="blogs">
-        <h1 class="heading">Nosso <span>blog</span></h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="images/blog-1.jpeg" alt="blog1">
-                </div>
-                <div class="content">
-                    <a href="#" class="title">Café saboroso e refrescante.</a>
-                    <span>by admin / 10 maio 2024</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nam consequuntur maxime
-                        mollitia corporis sed laudantium odit aut, quidem hi
-                    </p>
-                    <a href="#" class="btn">leia mais</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="images/blog-2.jpeg" alt="blog2">
-                </div>
-                <div class="content">
-                    <a href="#" class="title">Café saboroso e refrescante.</a>
-                    <span>by admin / 10 maio 2024</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nam consequuntur maxime
-                        mollitia corporis sed laudantium odit aut, quidem hi
-                    </p>
-                    <a href="#" class="btn">leia mais</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="images/blog-3.jpeg" alt="blog3">
-                </div>
-                <div class="content">
-                    <a href="#" class="title">Café saboroso e refrescante.</a>
-                    <span>by admin / 10 maio 2024</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nam consequuntur maxime
-                        mollitia corporis sed laudantium odit aut, quidem hi
-                    </p>
-                    <a href="#" class="btn">leia mais</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="footer">
-        <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-            <a href="#" class="fab fa-pinterest"></a>
-        </div>
-        <div class="link">
-            <a href="#home">Inicio</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#menu">Menu</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#revisao">Revisão</a>
-            <a href="#contact">Contato</a>
-            <a href="#blog">Blogs</a>
-        </div>
-        <div class="credit">
-            created by <span>Eli Santos</span> | Todos direitos reservados
-        </div>
-    </section>
-
-    <script src="script.js"></script>
-
-</body>
-<!--
-    https://www.youtube.com/watch?v=3r79R71ceKk - 11/05/2024
--->
+    </div>
+    <div class="copyright">
+        <a href="#home"><i class="fas fa-arrow-alt-circle-up"></i></a>
+        <p>Desenvolvido por Eli santos &copy;</p>
+    </div>
 
 </html>
